@@ -1,0 +1,33 @@
+@using FogliettaA_5I_EventiEF.Data;
+@model Membro
+
+@{
+    ViewData["Title"] = "Sign up";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Effettua il Sign Up</h1>
+    
+    <form class="m-2" method="post" asp-action="Conferma">
+        <div class="form-group">
+            <label asp-for="Nickname">Il tuo nickname:</label>
+            <input required asp-for="Nickname" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Nome">Il tuo nome:</label>
+            <input required asp-for="Nome" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Cognome">Il tuo cognome:</label>
+            <input required asp-for="Cognome" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">La tua email:</label>
+            <input required asp-for="Email" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary w-25 mb-2">Conferma</button>
+    </form>
+</div>

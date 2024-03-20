@@ -1,0 +1,25 @@
+@using FogliettaA_5I_EventiEF.Data;
+@model Membro
+@{
+    ViewData["Title"] = "Conferma";
+}
+
+@if(Model != null){
+    <div>
+        Dati inseriti:
+        <ul class="list-group w-75 mx-auto my-2">
+            <li>
+                Nickname: @Model.Nickname
+            </li>
+            <li>
+                Nome: @Model.Nome
+            </li>
+            <li>
+                Cognome: @Model.Cognome
+            </li>
+            <li>
+                Email: @Model.Email
+            </li>
+        </ul>
+    </div>
+}
